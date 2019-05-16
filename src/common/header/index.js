@@ -7,11 +7,44 @@ import {
   Logo,
   Nav,
   NavItem,
+  SearchInfo,
+  SearchInfoTitle,
+  SearchInfoSwitch,
+  SearchInfoList,
+  SearchInfoItem,
   SearchWrapper,
   NavSearch,
   Addition,
   Button
 } from './style';
+
+const getListArea = (show) => {
+  if (show) {
+    return (
+      <SearchInfo>
+        <SearchInfoTitle>
+          热门搜索
+          <SearchInfoSwitch>换一批</SearchInfoSwitch>
+        </SearchInfoTitle>
+        <SearchInfoList>
+          <SearchInfoItem>区块链</SearchInfoItem>
+          <SearchInfoItem>小程序</SearchInfoItem>
+          <SearchInfoItem>vue</SearchInfoItem>
+          <SearchInfoItem>PHP</SearchInfoItem>
+          <SearchInfoItem>理财</SearchInfoItem>
+          <SearchInfoItem>react</SearchInfoItem>
+          <SearchInfoItem>flutter</SearchInfoItem>
+          <SearchInfoItem>reactNative</SearchInfoItem>
+          <SearchInfoItem>程序员</SearchInfoItem>
+          <SearchInfoItem>vuex</SearchInfoItem>
+          <SearchInfoItem>设计</SearchInfoItem>
+        </SearchInfoList>
+      </SearchInfo>
+    )
+  } else {
+    return null;
+  }
+}
 
 const Header = (props) => {
   return (
@@ -36,7 +69,10 @@ const Header = (props) => {
               onBlur={props.handleInputBlur}
             ></NavSearch>
           </CSSTransition>
-          <i className={props.focused ? 'focused iconfont' : 'iconfont'}>&#xe614;</i>
+          <i className={props.focused ? 'focused iconfont' : 'iconfont'}>
+            &#xe614;
+          </i>
+          {getListArea(props.focused)}
         </SearchWrapper>
       </Nav>
       <Addition>
