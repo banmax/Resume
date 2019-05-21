@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import logoPic from '../../statics/logo.png';
 
-export const HeaderWrapper = styled.div`
+export const HeaderWrapper = styled.div `
   position: relative;
   // display: -webkit-flex; /* Safari */
   display: flex;
@@ -12,8 +12,9 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Logo = styled.a.attrs({
-  href: '/'
-})`;
+    href: '/'
+})
+`;
   // position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +26,7 @@ export const Logo = styled.a.attrs({
   background-size: 100% 100%;
 `;
 
-export const Nav = styled.div`
+export const Nav = styled.div `
   // width: 60em;
   width: 70%;
   height: 100%
@@ -34,7 +35,7 @@ export const Nav = styled.div`
   margin: 0 auto;
 `;
 
-export const NavItem = styled.div`
+export const NavItem = styled.div `
   line-height: 3.5em;
   padding: 0 0.9375em;
   font-size: 1.0625em;
@@ -51,7 +52,7 @@ export const NavItem = styled.div`
   }
 `;
 
-export const SearchWrapper = styled.div`
+export const SearchWrapper = styled.div `
   position: relative;
   float: left;
   .zoom {
@@ -70,8 +71,9 @@ export const SearchWrapper = styled.div`
 `;
 
 export const NavSearch = styled.input.attrs({
-  placeholder: '搜索'
-})`
+    placeholder: '搜索'
+})
+`
   width: 10em;
   height: 2.75em;
   margin-top: 0.5625em;
@@ -105,16 +107,17 @@ export const NavSearch = styled.input.attrs({
   }
 `;
 
-export const SearchInfo = styled.div`
+export const SearchInfo = styled.div `
   position: absolute;
   left: 0;
   top: 3.5em;
   width: 15em;
   padding: 0 1.25em;
   box-shadow: 0 0 .5em rgba(0, 0, 0, .2);
+  background: #fff;
 `;
 
-export const SearchInfoTitle = styled.div`
+export const SearchInfoTitle = styled.div `
   margin-top: 1.25em;
   margin-bottom: 1em;
   line-height: 1.25em;
@@ -122,7 +125,7 @@ export const SearchInfoTitle = styled.div`
   color: #969696;
 `;
 
-export const SearchInfoSwitch = styled.span`
+export const SearchInfoSwitch = styled.span `
   float: right;
   font-size: .8125em;
   cursor: pointer;
@@ -136,11 +139,11 @@ export const SearchInfoSwitch = styled.span`
   }
 `;
 
-export const SearchInfoList = styled.div`
+export const SearchInfoList = styled.div `
   overflow: hidden;
 `;
 
-export const SearchInfoItem = styled.a`
+export const SearchInfoItem = styled.a `
   display: block;
   float: left;
   line-height: 1.25em;
@@ -154,14 +157,14 @@ export const SearchInfoItem = styled.a`
 `;
 
 
-export const Addition = styled.div`
+export const Addition = styled.div `
   position: absolute;
   right: 0;
   top: 0;
   height: 3.5em;
 `;
 
-export const Button = styled.div`
+export const Button = styled.div `
   float: right;
   margin-top: 0.5625em;
   margin-right: 0.6em;
