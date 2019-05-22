@@ -11,11 +11,7 @@ export const HeaderWrapper = styled.div `
   border-bottom: 0.0625em solid #f0f0f0;
 `;
 
-export const Logo = styled.a.attrs({
-    href: '/'
-})
-`;
-  // position: absolute;
+export const Logo = styled.div `
   top: 0;
   left: 0;
   display: block;
@@ -33,6 +29,7 @@ export const Nav = styled.div `
   padding-right: 6.25em;
   box-sizing: border-box;
   margin: 0 auto;
+  cursor: pointer;
 `;
 
 export const NavItem = styled.div `
@@ -173,6 +170,7 @@ export const Button = styled.div `
   border-radius: 1.1875em;
   border: 0.0625em solid #ec6109;
   font-size: 0.875em;
+  cursor: pointer;
   &.reg {
     color: #ec6149;
   }

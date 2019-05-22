@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { CSSTransition } from 'react-transition-group'
 import { actionCreators } from './store';
+import { Link } from 'react-router-dom';
 import {
   HeaderWrapper,
   Logo,
@@ -25,44 +26,46 @@ class Header extends Component {
     const newList = list.toJS();
     const pageList = [];
 
-		if (newList.length) {
-			for (let i = (page - 1) * 10; i < page * 10; i++) {
-				pageList.push(
-					<SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem>
-				)
-			}
-		}
+    if (newList.length) {
+      for (let i = (page - 1) * 10; i < page * 10; i++) {
+        pageList.push(
+          <SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem>
+        )
+      }
+    }
 
     if (focused || mouseIn) {
-    return (
-      <SearchInfo 
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+      return (
+        <SearchInfo
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
-        <SearchInfoTitle>
-          热门搜索
-          <SearchInfoSwitch 
-            onClick={() => handleChangePage(page,totalPage, this.spinIcon)}
-          >
-            <i ref={(icon) => {this.spinIcon = icon}} className='iconfont spin'>&#xe851;</i>          
-            换一批
+          <SearchInfoTitle>
+            热门搜索
+          <SearchInfoSwitch
+              onClick={() => handleChangePage(page, totalPage, this.spinIcon)}
+            >
+              <i ref={(icon) => { this.spinIcon = icon }} className='iconfont spin'>&#xe851;</i>
+              换一批
           </SearchInfoSwitch>
-        </SearchInfoTitle>
-        <SearchInfoList>
-          {pageList}
-        </SearchInfoList>
-      </SearchInfo>
-    )
-  } else {
-    return null;
-  }
+          </SearchInfoTitle>
+          <SearchInfoList>
+            {pageList}
+          </SearchInfoList>
+        </SearchInfo>
+      )
+    } else {
+      return null;
+    }
   }
 
   render() {
     const { focused, handleInputFocus, handleInputBlur, list } = this.props;
     return (
       <HeaderWrapper>
-        <Logo />
+        <Link to='/'>
+          <Logo />
+        </Link>
         <Nav>
           <NavItem className='left active'>首页</NavItem>
           <NavItem className='left'>下载App</NavItem>
@@ -129,14 +132,14 @@ const mapDispatchToProps = (dispatch) => {
       let originAngle = spin.style.transform.replace(/[^0-9]/ig, '');
       if (originAngle) {
         originAngle = parseInt(originAngle, 10);
-      }else {
+      } else {
         originAngle = 0;
       }
-      spin.style.transform = 'rotate('+ (originAngle + 360) +'deg)';
+      spin.style.transform = 'rotate(' + (originAngle + 360) + 'deg)';
 
       if (page < totalPage) {
         dispatch(actionCreators.changePage(page + 1));
-      }else {
+      } else {
         dispatch(actionCreators.changePage(1));
       }
     }

@@ -6,9 +6,9 @@ export const HomeWrapper = styled.div `
   margin: 0 auto;
 `;
 
-export const HomeLeft = styled.div `
-  float: left;
-  margin-left: 1em;
+export const HomeRight = styled.div `
+  float: right;
+  margin-right: 1em;
   padding-top: 1.875em;
   width: 39em;
   .banner-img {
@@ -17,9 +17,9 @@ export const HomeLeft = styled.div `
   }
 `;
 
-export const HomeRight = styled.div `
+export const HomeLeft = styled.div `
   width: 17.5em;
-  float: right;
+  float: left;
 `;
 
 export const TopicWrapper = styled.div `
@@ -110,4 +110,16 @@ export const LoadMore = styled.div `
   border-radius: 1.25em;
   color: #fff;
   cursor: pointer;
-`
+`;
+
+export const BackTop = styled.div `
+  position: fixed;
+  right: 6.25em;
+  bottom: 6.25em;
+  width: 3.75em;
+  height: 3.75em;
+  line-height: 3.75em;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+`;
