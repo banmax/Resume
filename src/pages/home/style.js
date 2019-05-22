@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const HomeWrapper = styled.div`
+export const HomeWrapper = styled.div `
   overflow: hidden;
   width: 60em;
   margin: 0 auto;
 `;
 
-export const HomeLeft = styled.div`
+export const HomeLeft = styled.div `
   float: left;
   margin-left: 1em;
   padding-top: 1.875em;
@@ -17,19 +17,19 @@ export const HomeLeft = styled.div`
   }
 `;
 
-export const HomeRight = styled.div`
-  width: 15em;
+export const HomeRight = styled.div `
+  width: 17.5em;
   float: right;
 `;
 
-export const TopicWrapper = styled.div`
+export const TopicWrapper = styled.div `
   overflow: hidden;
   padding: 1.25em 0 .75em 0;
   margin-left: -0.625em;
   border-bottom: .0625em solid #dcdcdc;
 `;
 
-export const TopicItem = styled.div`
+export const TopicItem = styled.div `
   float: left;
   height: 2em;
   line-height: 2em;
@@ -77,4 +77,25 @@ export const ListInfo = styled.div `
     font-size: .75em;
     color: #999;
   }
+`;
+
+export const RecommendWrapper = styled.div `
+  margin: 1.875em 0;
+  width: 17.5em;
+`;
+
+export const RecommendItem = styled.div `
+  width: 17.5em;
+  height: 3.125em;
+  background: url(${(props) => props.imgUrl});
+  background-size: contain;
+`;
+
+export const WriterWrapper = styled.div `
+  width: 17.4em;
+  border: 1px solid #dcdcdc;
+  border-radius: .25em;
+  height: 17.5em;
+  line-height: 17.5em;
+  text-align: center;
 `;
