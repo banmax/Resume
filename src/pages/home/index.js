@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import Topic from './components/Topic';
+import Test from './components/Test';
+import Reward from './components/Reward';
 import List from './components/List';
 import Recommend from './components/Recommend';
 import Writer from './components/Writer';
@@ -23,8 +25,9 @@ class Home extends PureComponent {
     return (
       <HomeWrapper>
         <HomeRight>
-          <img className='banner-img' src="//upload.jianshu.io/admin_banners/web_images/4592/22f5cfa984d47eaf3def6a48510cc87c157bf293.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt='' />
           <Topic></Topic>
+          <Test></Test>
+          <Reward></Reward>
           <List></List>
         </HomeRight>
         <HomeLeft>

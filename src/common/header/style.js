@@ -3,10 +3,7 @@ import logoPic from '../../statics/logo.png';
 
 export const HeaderWrapper = styled.div `
   position: relative;
-  // display: -webkit-flex; /* Safari */
   display: flex;
-  // flex-direction: row;
-  // flex-wrap: nowrap;
   height: 3.5em;
   border-bottom: 0.0625em solid #f0f0f0;
 `;
@@ -47,6 +44,9 @@ export const NavItem = styled.div `
   &.active {
     color: #ea6f5a;
   }
+  .icon {
+    font-size: 1.5em;
+  }
 `;
 
 export const SearchWrapper = styled.div `
@@ -67,10 +67,7 @@ export const SearchWrapper = styled.div `
   }
 `;
 
-export const NavSearch = styled.input.attrs({
-    placeholder: '搜索'
-})
-`
+export const NavSearch = styled.input `
   width: 10em;
   height: 2.75em;
   margin-top: 0.5625em;
@@ -110,6 +107,7 @@ export const SearchInfo = styled.div `
   top: 3.5em;
   width: 15em;
   padding: 0 1.25em;
+  z-index: 1;
   box-shadow: 0 0 .5em rgba(0, 0, 0, .2);
   background: #fff;
 `;

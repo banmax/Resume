@@ -1,24 +1,22 @@
 {
-	"success": true,
-	"data": [{
-			"id": 5,
-			"title": "胡歌12年后首谈车祸",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
-		}, {
-			"id": 6,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
-		}, {
-			"id": 7,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
-		}, {
-			"id": 8,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
-		}]
+    "success": true,
+    "data": [{
+        "id": 4,
+        "title": "音乐及电影资讯类微信小程序",
+        "desc": "利用微信小程序自带的特性，进行原生小程序应用的简单编写,涉及到：Swiper滑动组件、template模板化编程,默认状态栏与自定义状态栏、ActionSheet组件与API、Component自定义组件。",
+        "src": "https://github.com/banmax/Reader-Movie-and-Music",
+        "imgUrl": "../imgs/vx.png"
+    }, {
+        "id": 5,
+        "title": "基于VUE框架的移动端旅行网站 ",
+        "desc": "利用cli脚架构建，使用animate制作动画，使用vuex实现数据共享,使用axios获取接口数据,在城市选择页面使用Better-scroll和字母表布局，LocalStorage实现页面数据持久存储，使用keep-alive优化路由页面性能",
+        "src": "https://github.com/banmax/Travel-Vue",
+        "imgUrl": "../imgs/travel.png"
+    }, {
+        "id": 6,
+        "title": "基于React框架的个人简历网页",
+        "desc": "主要应用React-transition-group、styled-components、Ant Design UI组件，应用了React-thunk、React-saga中间件，简单的使用了immutable.js，使用axios获取接口数据,但是并没有使用响应式布局。",
+        "src": "https://github.com/banmax/Resume",
+        "imgUrl": "../imgs/resume.png"
+    }]
 }

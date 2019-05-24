@@ -1,12 +1,16 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import { TopicWrapper, TopicItem } from '../style';
+import { ComponentsBox, ComponentsTitle, TopicWrapper, TopicItem } from '../style';
 
 class Topic extends PureComponent {
   render() {
     const { list } = this.props;
     return (
       <TopicWrapper>
+        <ComponentsBox />
+        <ComponentsTitle>
+          <div>教育背景</div>
+        </ComponentsTitle>
         {
           list.map((item) => (
             <TopicItem key={item.get('id')}>

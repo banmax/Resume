@@ -1,26 +1,30 @@
 import React, { PureComponent } from 'react';
-import { ListItem, ListInfo, LoadMore } from '../style';
+import { ComponentsBox, ComponentsTitle, ListItem, ListInfo, LoadMore } from '../style';
 import { connect } from 'react-redux';
 import { actionCreators } from '../store';
-import { Link } from 'react-router-dom';
 
 class List extends PureComponent {
   render() {
     const { list, getMoreList, page } = this.props;
     return (
       <div>
+      <ComponentsBox />
+      <ComponentsTitle>
+        <div>实战项目</div>
+      </ComponentsTitle>
         {
           list.map((item, index) => {
             return (
-              <Link key={index} to='/detail'>
+              <div key={index}>
                 <ListItem>
                   <img className="pic" src={item.get('imgUrl')} alt="" />
                   <ListInfo>
                     <h3 className="title">{item.get('title')}</h3>
                     <p className="desc">{item.get('desc')}</p>
+                    <a className="src" href={item.get('src')}>{item.get('src')}</a>
                   </ListInfo>
                 </ListItem>
-              </Link>
+              </div>
             );
           })
         }
